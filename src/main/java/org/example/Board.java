@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 public class Board {
     private final int boardSize;
@@ -26,7 +27,9 @@ public class Board {
     private void setShipsRandom() {
         // 1 carrier, 2 battleships , 3 destroyers, 4 subs = 30 fields
         // ships can be placed vertically or horizontally.
-        // TODO are ships allowed to be adjacent to each other?
+        // ships cannot be adjacent to each other in the vertical and horizontal. Diagonal is allowed.
+        Random rand = new Random();
+
 
     }
 
@@ -41,6 +44,16 @@ public class Board {
             System.out.println();
             i++;
         }
+    }
+
+    //returns null if not able to parse coordinates
+    private int[] coordinatesToIndices(String coordinates) {
+        String columns = "ABCDEFGHIJ";
+
+
+
+
+        return null;
     }
 
 }
